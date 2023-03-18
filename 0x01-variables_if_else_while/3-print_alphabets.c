@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -  [WRITE A SHORT DESCRIPTION HERE]
+ * main - entry point
  * Return: 0
  */
 int main(void)
@@ -13,5 +13,6 @@ int main(void)
 	putchar(ch);
 	putchar('\n');
 	return (0);
+
 }
 
