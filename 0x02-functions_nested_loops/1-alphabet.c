@@ -1,10 +1,10 @@
-#iclude "main.h"
+#include "main.h"
 /**
  * print_alphabet - print alphabet
  */
 void print_alphabet(void)
 {
-char letters = 'a'
+char letters = 'a';
 	while (letters <= 'z')
 	{
 	_putchar(letters);
