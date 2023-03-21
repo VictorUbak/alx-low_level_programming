@@ -8,8 +8,7 @@ char letters = 'a';
 	while (letters <= 'z')
 	{
 	_putchar(letters);
-	letters++
+	letters++;
 	}
 _putchar('\n');
 }
-
