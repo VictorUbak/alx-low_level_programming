@@ -2,7 +2,7 @@
 /**
  *  _abs - abs
  *  @n: is letters abs
- *  Return: n 
+ *  Return: n
  */
 int _abs(int n)
 {
