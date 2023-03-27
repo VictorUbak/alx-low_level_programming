@@ -12,7 +12,7 @@ while (*s != '\0')
 len++;
 s++;
 }
-s--
+s--;
 while (len > 0)
 {
 s--;
