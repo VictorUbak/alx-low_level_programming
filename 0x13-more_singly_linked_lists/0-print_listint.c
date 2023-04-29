@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stddef.h>
 /**
  * print_listint - print list
  * @h: print list int
@@ -18,4 +19,3 @@ size_t print_listint(const listint_t *h)
 		}
 return (i);
 }
-
