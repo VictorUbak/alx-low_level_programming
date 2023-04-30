@@ -1,23 +1,25 @@
 #include "lists.h"
+
 /**
- * *get_nodeint_at_index - get node at index
+ * get_nodeint_at_index - get node list
  * @head: get node
- * @index: get node int
- * Return: node
+ * @index: index node
+ * Return: NULL
  */
+
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-listint_t *temp = head;
-unsigned int tom = 0;
+	listint_t *current_node = head;
+	unsigned int n = 0;
 
-	if (head == NULL || index == 0)
-	return (NULL);
-
-	while (temp != NULL && tom < index)
+	while (current_node != NULL)
 	{
-	temp = temp->next;
-	tom++;
+	if (n == index)
+{
+	return (current_node);
 	}
-
-	return (temp);
+	n++;
+	current_node = current_node->next;
+	}
+	return (NULL);
 }
