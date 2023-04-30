@@ -18,5 +18,6 @@ unsigned int tom = 0;
 	temp = temp->next;
 	tom++;
 	}
+
 	return (temp);
 }
