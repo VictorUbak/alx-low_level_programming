@@ -7,8 +7,7 @@ void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
- * @file: The name of the file buffer is storing chars for.
- *
+ * @file: The name of the file buffer is storing' chars for
  * Return: A file content.
  */
 char *create_buffer(char *file)
@@ -68,7 +67,7 @@ int main(int argc, char *argv[])
 	bf = create_buffer(argv[2]);
 	epic = open(argv[1], O_RDONLY);
 	r = read(epic, bf, 1024);
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	dc = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
 		if (epic == -1 || r == -1)
@@ -79,7 +78,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		l = write(to, bf, r);
+		l = write(dc, bf, r);
 		if (dc == -1 || l == -1)
 		{
 			dprintf(STDERR_FILENO,
